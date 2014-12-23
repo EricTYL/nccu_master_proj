@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment version="2048" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="viewStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="底圖.png" translatesAutoresizingMaskIntoConstraints="NO" id="h6V-av-tWZ">
+                                <rect key="frame" x="0.0" y="-13" width="330" height="590"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hq7-34-fxH">
+                                <rect key="frame" x="94" y="404" width="128" height="37"/>
+                                <state key="normal" backgroundImage="按鈕.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findOurPlace:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="n4c-Tq-Pki"/>
+                                    <segue destination="eRj-gY-uNN" kind="modal" identifier="changeMapVC" id="Li9-zX-M1O"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="訊號來源：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BV-VK-s49">
+                                <rect key="frame" x="70" y="464" width="85" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yah-3A-pHT">
+                                <rect key="frame" x="171" y="464" width="80" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldReture:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="PpB-A2-8XO"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R7E-OC-2Mc"/>
+                    <connections>
+                        <outlet property="getSignalName" destination="Yah-3A-pHT" id="qlN-Qe-8t4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="26"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="1GU-vb-Xar">
+            <objects>
+                <viewController storyboardIdentifier="mapViewStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eRj-gY-uNN" customClass="mapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n60-2Y-AUn"/>
+                        <viewControllerLayoutGuide type="bottom" id="mDQ-3k-ODO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="showView" id="p6T-4C-Qzy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsl-ia-bsB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="76O-ID-0Pv">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="導覽地圖底圖_無動線.png" translatesAutoresizingMaskIntoConstraints="NO" id="iP1-aD-0yf">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="577"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="p1" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12z-tE-c42">
+                                                <rect key="frame" x="59" y="302" width="42" height="41"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="陶罐 icon.png">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="getSecondPoint:" destination="eRj-gY-uNN" eventType="touchUpInside" id="5Cj-f6-42a"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="p2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeF-lB-oAm">
+                                                <rect key="frame" x="111" y="422" width="41" height="39"/>
+                                                <state key="normal" backgroundImage="圖騰布icon.png">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="getSecondPoint:" destination="eRj-gY-uNN" eventType="touchUpInside" id="WfI-im-Fso"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="p3" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TH-oj-94i">
+                                                <rect key="frame" x="190" y="361" width="41" height="38"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="p3" image="icon_服飾.png">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="getSecondPoint:" destination="eRj-gY-uNN" eventType="touchUpInside" id="ugl-xF-99K"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="p4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDk-9Z-f4m">
+                                                <rect key="frame" x="256" y="316" width="44" height="39"/>
+                                                <state key="normal" backgroundImage="icon_生活器具.png">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="getSecondPoint:" destination="eRj-gY-uNN" eventType="touchUpInside" id="tdW-x9-FoQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="p5" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8G-e2-CKi">
+                                                <rect key="frame" x="268" y="233" width="47" height="42"/>
+                                                <state key="normal" backgroundImage="icon_面具.png">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="getSecondPoint:" destination="eRj-gY-uNN" eventType="touchUpInside" id="gir-op-g4z"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="p6" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Te4-uz-sV2">
+                                                <rect key="frame" x="256" y="152" width="54" height="34"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" backgroundImage="boat icon.png">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="getSecondPoint:" destination="eRj-gY-uNN" eventType="touchUpInside" id="XdI-Qb-Kyr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="p7" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jD7-LI-KX3">
+                                                <rect key="frame" x="155" y="120" width="44" height="44"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" backgroundImage="icon_蒙古包.png">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="getSecondPoint:" destination="eRj-gY-uNN" eventType="touchUpInside" id="kBd-wb-Ar5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJf-sb-3TN">
+                                                <rect key="frame" x="0.0" y="522" width="150" height="46"/>
+                                                <state key="normal" title="開始導航">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="navigationStart:" destination="eRj-gY-uNN" eventType="touchUpInside" id="Rpp-mO-kaH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgE-90-SKz">
+                                                <rect key="frame" x="160" y="526" width="160" height="38"/>
+                                                <state key="normal" title="重新定位">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="findOurPlaceAgain:" destination="eRj-gY-uNN" eventType="touchUpInside" id="JlU-Ri-Eih"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="czn-O8-6O1">
+                                                <rect key="frame" x="192" y="441" width="97" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textFieldReture:" destination="eRj-gY-uNN" eventType="editingDidEndOnExit" id="8vg-kC-CSC"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pIy-l8-754">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="LW6-eh-fSq"/>
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="oxK-hc-Lzj"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="getPositionID" destination="czn-O8-6O1" id="JBd-Yz-WXy"/>
+                        <outlet property="rePositionButton" destination="bgE-90-SKz" id="Pip-bj-gw4"/>
+                        <outlet property="scrollView" destination="lsl-ia-bsB" id="ZLd-HK-FE4"/>
+                        <outlet property="showView" destination="p6T-4C-Qzy" id="eI7-IV-Bmk"/>
+                        <outlet property="startNavigationButton" destination="sJf-sb-3TN" id="drb-40-XOH"/>
+                        <outlet property="viewInScrollView" destination="76O-ID-0Pv" id="XDf-mb-a5A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTs-uL-sp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="26"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="eeD-vP-eit">
+            <objects>
+                <viewController storyboardIdentifier="infoViewStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tpd-CQ-tg2" customClass="infoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="znj-Ao-NXn"/>
+                        <viewControllerLayoutGuide type="bottom" id="hjR-Yr-0XW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ScE-BV-fwy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rp9-pz-I6Z">
+                                <rect key="frame" x="20" y="65" width="280" height="238"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sqh-ld-Sgz">
+                                <rect key="frame" x="20" y="364" width="280" height="184"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDr-YI-qto">
+                                <rect key="frame" x="86" y="321" width="154" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="視窗底.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Cu-S9-Lcg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Uzd-Eb-99k"/>
+                    <connections>
+                        <outlet property="imageView" destination="Rp9-pz-I6Z" id="Zo3-JC-C0k"/>
+                        <outlet property="label" destination="dDr-YI-qto" id="2BV-Ot-meG"/>
+                        <outlet property="textView" destination="Sqh-ld-Sgz" id="wQL-QP-7CZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7E-Ob-eSI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1523" y="26"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="boat icon.png" width="101" height="65"/>
+        <image name="icon_服飾.png" width="229" height="211"/>
+        <image name="icon_生活器具.png" width="401" height="415"/>
+        <image name="icon_蒙古包.png" width="485" height="449"/>
+        <image name="icon_面具.png" width="282" height="362"/>
+        <image name="圖騰布icon.png" width="83" height="70"/>
+        <image name="導覽地圖底圖_無動線.png" width="640" height="1136"/>
+        <image name="底圖.png" width="640" height="1136"/>
+        <image name="按鈕.png" width="254" height="72"/>
+        <image name="視窗底.png" width="568" height="285"/>
+        <image name="陶罐 icon.png" width="42" height="40"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

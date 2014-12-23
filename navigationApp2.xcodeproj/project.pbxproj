@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		765638811A2B6803009DD2A7 /* infoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 765638801A2B6803009DD2A7 /* infoViewController.m */; };
+		76BC4DF519CECB5A009E627A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BC4DF419CECB5A009E627A /* Foundation.framework */; };
+		76BC4DF719CECB5A009E627A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BC4DF619CECB5A009E627A /* CoreGraphics.framework */; };
+		76BC4DF919CECB5A009E627A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BC4DF819CECB5A009E627A /* UIKit.framework */; };
+		76BC4DFF19CECB5A009E627A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76BC4DFD19CECB5A009E627A /* InfoPlist.strings */; };
+		76BC4E0119CECB5A009E627A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BC4E0019CECB5A009E627A /* main.m */; };
+		76BC4E0519CECB5A009E627A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BC4E0419CECB5A009E627A /* AppDelegate.m */; };
+		76BC4E0819CECB5A009E627A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BC4E0619CECB5A009E627A /* Main.storyboard */; };
+		76BC4E0B19CECB5A009E627A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BC4E0A19CECB5A009E627A /* ViewController.m */; };
+		76BC4E0D19CECB5A009E627A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BC4E0C19CECB5A009E627A /* Images.xcassets */; };
+		76BC4E1419CECB5A009E627A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BC4E1319CECB5A009E627A /* XCTest.framework */; };
+		76BC4E1519CECB5A009E627A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BC4DF419CECB5A009E627A /* Foundation.framework */; };
+		76BC4E1619CECB5A009E627A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BC4DF819CECB5A009E627A /* UIKit.framework */; };
+		76BC4E1E19CECB5A009E627A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76BC4E1C19CECB5A009E627A /* InfoPlist.strings */; };
+		76BC4E2019CECB5A009E627A /* navigationApp2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BC4E1F19CECB5A009E627A /* navigationApp2Tests.m */; };
+		76BC4E2F19CECBFA009E627A /* mapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BC4E2E19CECBFA009E627A /* mapViewController.m */; };
+		91E2926A1A47CCF900048293 /* icon_匕首.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E2924C1A47CCF900048293 /* icon_匕首.png */; };
+		91E2926B1A47CCF900048293 /* icon_服飾.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E2924D1A47CCF900048293 /* icon_服飾.png */; };
+		91E2926C1A47CCF900048293 /* icon_生活器具.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E2924E1A47CCF900048293 /* icon_生活器具.png */; };
+		91E2926D1A47CCF900048293 /* icon_蒙古包.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E2924F1A47CCF900048293 /* icon_蒙古包.png */; };
+		91E2926E1A47CCF900048293 /* icon_面具.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E292501A47CCF900048293 /* icon_面具.png */; };
+		91E2926F1A47CCF900048293 /* 導覽地圖底圖_無動線.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E292511A47CCF900048293 /* 導覽地圖底圖_無動線.png */; };
+		91E292701A47CCF900048293 /* boat icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E292541A47CCF900048293 /* boat icon.png */; };
+		91E292711A47CCF900048293 /* user_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E292551A47CCF900048293 /* user_icon.png */; };
+		91E292721A47CCF900048293 /* 動線.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E292561A47CCF900048293 /* 動線.png */; };
+		91E292731A47CCF900048293 /* 圖騰布icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E292571A47CCF900048293 /* 圖騰布icon.png */; };
+		91E292741A47CCF900048293 /* 導航中.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E292581A47CCF900048293 /* 導航中.png */; };
+		91E292751A47CCF900048293 /* 純位置點.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E292591A47CCF900048293 /* 純位置點.png */; };
+		91E292761A47CCF900048293 /* 開始導航.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E2925A1A47CCF900048293 /* 開始導航.png */; };
+		91E292771A47CCF900048293 /* 陶罐 icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E2925B1A47CCF900048293 /* 陶罐 icon.png */; };
+		91E292781A47CCF900048293 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E2925D1A47CCF900048293 /* x.png */; };
+		91E292791A47CCF900048293 /* 視窗.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E2925E1A47CCF900048293 /* 視窗.png */; };
+		91E2927A1A47CCF900048293 /* 視窗無X.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E2925F1A47CCF900048293 /* 視窗無X.png */; };
+		91E2927B1A47CCF900048293 /* bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E292611A47CCF900048293 /* bk.png */; };
+		91E2927C1A47CCF900048293 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E292621A47CCF900048293 /* cancel.png */; };
+		91E2927D1A47CCF900048293 /* Network-Bluetooth-2-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E292631A47CCF900048293 /* Network-Bluetooth-2-icon.png */; };
+		91E2927E1A47CCF900048293 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E292641A47CCF900048293 /* setting.png */; };
+		91E2927F1A47CCF900048293 /* 藍芽檢查視窗.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E292651A47CCF900048293 /* 藍芽檢查視窗.png */; };
+		91E292801A47CCF900048293 /* 視窗底.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E292661A47CCF900048293 /* 視窗底.png */; };
+		91E292811A47CCF900048293 /* 底圖.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E292681A47CCF900048293 /* 底圖.png */; };
+		91E292821A47CCF900048293 /* 按鈕.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E292691A47CCF900048293 /* 按鈕.png */; };
+		91FD21AB1A3DEA9B003F434C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FD21AA1A3DEA9B003F434C /* CoreBluetooth.framework */; };
+		91FD21AD1A3DEAA3003F434C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FD21AC1A3DEAA3003F434C /* CoreLocation.framework */; };
+		91FD21AF1A3DEAC0003F434C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FD21AE1A3DEAC0003F434C /* SystemConfiguration.framework */; };
+		91FD22091A3DEAEB003F434C /* libEstimoteSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FD22081A3DEAEB003F434C /* libEstimoteSDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76BC4E1719CECB5A009E627A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76BC4DE919CECB5A009E627A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76BC4DF019CECB5A009E627A;
+			remoteInfo = navigationApp2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7656387F1A2B6803009DD2A7 /* infoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoViewController.h; sourceTree = "<group>"; };
+		765638801A2B6803009DD2A7 /* infoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoViewController.m; sourceTree = "<group>"; };
+		765A21981A2248C300B33708 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		76BC4DF119CECB5A009E627A /* navigationApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = navigationApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BC4DF419CECB5A009E627A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		76BC4DF619CECB5A009E627A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		76BC4DF819CECB5A009E627A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		76BC4DFC19CECB5A009E627A /* navigationApp2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "navigationApp2-Info.plist"; sourceTree = "<group>"; };
+		76BC4DFE19CECB5A009E627A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		76BC4E0019CECB5A009E627A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		76BC4E0219CECB5A009E627A /* navigationApp2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "navigationApp2-Prefix.pch"; sourceTree = "<group>"; };
+		76BC4E0319CECB5A009E627A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		76BC4E0419CECB5A009E627A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		76BC4E0719CECB5A009E627A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76BC4E0919CECB5A009E627A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		76BC4E0A19CECB5A009E627A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		76BC4E0C19CECB5A009E627A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		76BC4E1219CECB5A009E627A /* navigationApp2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = navigationApp2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BC4E1319CECB5A009E627A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		76BC4E1B19CECB5A009E627A /* navigationApp2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "navigationApp2Tests-Info.plist"; sourceTree = "<group>"; };
+		76BC4E1D19CECB5A009E627A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		76BC4E1F19CECB5A009E627A /* navigationApp2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = navigationApp2Tests.m; sourceTree = "<group>"; };
+		76BC4E2D19CECBFA009E627A /* mapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapViewController.h; sourceTree = "<group>"; };
+		76BC4E2E19CECBFA009E627A /* mapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapViewController.m; sourceTree = "<group>"; };
+		91E2924C1A47CCF900048293 /* icon_匕首.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_匕首.png"; sourceTree = "<group>"; };
+		91E2924D1A47CCF900048293 /* icon_服飾.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_服飾.png"; sourceTree = "<group>"; };
+		91E2924E1A47CCF900048293 /* icon_生活器具.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_生活器具.png"; sourceTree = "<group>"; };
+		91E2924F1A47CCF900048293 /* icon_蒙古包.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_蒙古包.png"; sourceTree = "<group>"; };
+		91E292501A47CCF900048293 /* icon_面具.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_面具.png"; sourceTree = "<group>"; };
+		91E292511A47CCF900048293 /* 導覽地圖底圖_無動線.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "導覽地圖底圖_無動線.png"; sourceTree = "<group>"; };
+		91E292541A47CCF900048293 /* boat icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boat icon.png"; sourceTree = "<group>"; };
+		91E292551A47CCF900048293 /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
+		91E292561A47CCF900048293 /* 動線.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "動線.png"; sourceTree = "<group>"; };
+		91E292571A47CCF900048293 /* 圖騰布icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "圖騰布icon.png"; sourceTree = "<group>"; };
+		91E292581A47CCF900048293 /* 導航中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "導航中.png"; sourceTree = "<group>"; };
+		91E292591A47CCF900048293 /* 純位置點.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "純位置點.png"; sourceTree = "<group>"; };
+		91E2925A1A47CCF900048293 /* 開始導航.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "開始導航.png"; sourceTree = "<group>"; };
+		91E2925B1A47CCF900048293 /* 陶罐 icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "陶罐 icon.png"; sourceTree = "<group>"; };
+		91E2925D1A47CCF900048293 /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
+		91E2925E1A47CCF900048293 /* 視窗.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "視窗.png"; sourceTree = "<group>"; };
+		91E2925F1A47CCF900048293 /* 視窗無X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "視窗無X.png"; sourceTree = "<group>"; };
+		91E292611A47CCF900048293 /* bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk.png; sourceTree = "<group>"; };
+		91E292621A47CCF900048293 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		91E292631A47CCF900048293 /* Network-Bluetooth-2-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Network-Bluetooth-2-icon.png"; sourceTree = "<group>"; };
+		91E292641A47CCF900048293 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
+		91E292651A47CCF900048293 /* 藍芽檢查視窗.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "藍芽檢查視窗.png"; sourceTree = "<group>"; };
+		91E292661A47CCF900048293 /* 視窗底.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "視窗底.png"; sourceTree = "<group>"; };
+		91E292681A47CCF900048293 /* 底圖.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "底圖.png"; sourceTree = "<group>"; };
+		91E292691A47CCF900048293 /* 按鈕.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按鈕.png"; sourceTree = "<group>"; };
+		91FD21AA1A3DEA9B003F434C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		91FD21AC1A3DEAA3003F434C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		91FD21AE1A3DEAC0003F434C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		91FD22081A3DEAEB003F434C /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEstimoteSDK.a; path = "../../EST_SDK/iOS-SDK-master/EstimoteSDK/libEstimoteSDK.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76BC4DEE19CECB5A009E627A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91FD22091A3DEAEB003F434C /* libEstimoteSDK.a in Frameworks */,
+				91FD21AF1A3DEAC0003F434C /* SystemConfiguration.framework in Frameworks */,
+				91FD21AD1A3DEAA3003F434C /* CoreLocation.framework in Frameworks */,
+				91FD21AB1A3DEA9B003F434C /* CoreBluetooth.framework in Frameworks */,
+				76BC4DF719CECB5A009E627A /* CoreGraphics.framework in Frameworks */,
+				76BC4DF919CECB5A009E627A /* UIKit.framework in Frameworks */,
+				76BC4DF519CECB5A009E627A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BC4E0F19CECB5A009E627A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BC4E1419CECB5A009E627A /* XCTest.framework in Frameworks */,
+				76BC4E1619CECB5A009E627A /* UIKit.framework in Frameworks */,
+				76BC4E1519CECB5A009E627A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76BC4DE819CECB5A009E627A = {
+			isa = PBXGroup;
+			children = (
+				76BC4DFA19CECB5A009E627A /* navigationApp2 */,
+				76BC4E1919CECB5A009E627A /* navigationApp2Tests */,
+				76BC4DF319CECB5A009E627A /* Frameworks */,
+				76BC4DF219CECB5A009E627A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76BC4DF219CECB5A009E627A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76BC4DF119CECB5A009E627A /* navigationApp2.app */,
+				76BC4E1219CECB5A009E627A /* navigationApp2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76BC4DF319CECB5A009E627A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91FD22081A3DEAEB003F434C /* libEstimoteSDK.a */,
+				91FD21AE1A3DEAC0003F434C /* SystemConfiguration.framework */,
+				91FD21AC1A3DEAA3003F434C /* CoreLocation.framework */,
+				91FD21AA1A3DEA9B003F434C /* CoreBluetooth.framework */,
+				765A21981A2248C300B33708 /* QuartzCore.framework */,
+				76BC4DF419CECB5A009E627A /* Foundation.framework */,
+				76BC4DF619CECB5A009E627A /* CoreGraphics.framework */,
+				76BC4DF819CECB5A009E627A /* UIKit.framework */,
+				76BC4E1319CECB5A009E627A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76BC4DFA19CECB5A009E627A /* navigationApp2 */ = {
+			isa = PBXGroup;
+			children = (
+				76BC4E0319CECB5A009E627A /* AppDelegate.h */,
+				76BC4E0419CECB5A009E627A /* AppDelegate.m */,
+				76BC4E0619CECB5A009E627A /* Main.storyboard */,
+				76BC4E0919CECB5A009E627A /* ViewController.h */,
+				76BC4E0A19CECB5A009E627A /* ViewController.m */,
+				76BC4E2D19CECBFA009E627A /* mapViewController.h */,
+				76BC4E2E19CECBFA009E627A /* mapViewController.m */,
+				7656387F1A2B6803009DD2A7 /* infoViewController.h */,
+				765638801A2B6803009DD2A7 /* infoViewController.m */,
+				76BC4E0C19CECB5A009E627A /* Images.xcassets */,
+				76BC4DFB19CECB5A009E627A /* Supporting Files */,
+			);
+			path = navigationApp2;
+			sourceTree = "<group>";
+		};
+		76BC4DFB19CECB5A009E627A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91E2924B1A47CCF800048293 /* 民族館導航app */,
+				91E292521A47CCF900048293 /* 素材 */,
+				76BC4DFC19CECB5A009E627A /* navigationApp2-Info.plist */,
+				76BC4DFD19CECB5A009E627A /* InfoPlist.strings */,
+				76BC4E0019CECB5A009E627A /* main.m */,
+				76BC4E0219CECB5A009E627A /* navigationApp2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76BC4E1919CECB5A009E627A /* navigationApp2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				76BC4E1F19CECB5A009E627A /* navigationApp2Tests.m */,
+				76BC4E1A19CECB5A009E627A /* Supporting Files */,
+			);
+			path = navigationApp2Tests;
+			sourceTree = "<group>";
+		};
+		76BC4E1A19CECB5A009E627A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76BC4E1B19CECB5A009E627A /* navigationApp2Tests-Info.plist */,
+				76BC4E1C19CECB5A009E627A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91E2924B1A47CCF800048293 /* 民族館導航app */ = {
+			isa = PBXGroup;
+			children = (
+				91E2924C1A47CCF900048293 /* icon_匕首.png */,
+				91E2924D1A47CCF900048293 /* icon_服飾.png */,
+				91E2924E1A47CCF900048293 /* icon_生活器具.png */,
+				91E2924F1A47CCF900048293 /* icon_蒙古包.png */,
+				91E292501A47CCF900048293 /* icon_面具.png */,
+				91E292511A47CCF900048293 /* 導覽地圖底圖_無動線.png */,
+			);
+			path = "民族館導航app";
+			sourceTree = "<group>";
+		};
+		91E292521A47CCF900048293 /* 素材 */ = {
+			isa = PBXGroup;
+			children = (
+				91E292531A47CCF900048293 /* 導覽地圖 */,
+				91E2925C1A47CCF900048293 /* 文物說明 */,
+				91E292601A47CCF900048293 /* 藍芽連線中 */,
+				91E292671A47CCF900048293 /* 首頁 */,
+			);
+			path = "素材";
+			sourceTree = "<group>";
+		};
+		91E292531A47CCF900048293 /* 導覽地圖 */ = {
+			isa = PBXGroup;
+			children = (
+				91E292541A47CCF900048293 /* boat icon.png */,
+				91E292551A47CCF900048293 /* user_icon.png */,
+				91E292561A47CCF900048293 /* 動線.png */,
+				91E292571A47CCF900048293 /* 圖騰布icon.png */,
+				91E292581A47CCF900048293 /* 導航中.png */,
+				91E292591A47CCF900048293 /* 純位置點.png */,
+				91E2925A1A47CCF900048293 /* 開始導航.png */,
+				91E2925B1A47CCF900048293 /* 陶罐 icon.png */,
+			);
+			path = "導覽地圖";
+			sourceTree = "<group>";
+		};
+		91E2925C1A47CCF900048293 /* 文物說明 */ = {
+			isa = PBXGroup;
+			children = (
+				91E2925D1A47CCF900048293 /* x.png */,
+				91E2925E1A47CCF900048293 /* 視窗.png */,
+				91E2925F1A47CCF900048293 /* 視窗無X.png */,
+			);
+			path = "文物說明";
+			sourceTree = "<group>";
+		};
+		91E292601A47CCF900048293 /* 藍芽連線中 */ = {
+			isa = PBXGroup;
+			children = (
+				91E292611A47CCF900048293 /* bk.png */,
+				91E292621A47CCF900048293 /* cancel.png */,
+				91E292631A47CCF900048293 /* Network-Bluetooth-2-icon.png */,
+				91E292641A47CCF900048293 /* setting.png */,
+				91E292651A47CCF900048293 /* 藍芽檢查視窗.png */,
+				91E292661A47CCF900048293 /* 視窗底.png */,
+			);
+			path = "藍芽連線中";
+			sourceTree = "<group>";
+		};
+		91E292671A47CCF900048293 /* 首頁 */ = {
+			isa = PBXGroup;
+			children = (
+				91E292681A47CCF900048293 /* 底圖.png */,
+				91E292691A47CCF900048293 /* 按鈕.png */,
+			);
+			path = "首頁";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76BC4DF019CECB5A009E627A /* navigationApp2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76BC4E2319CECB5A009E627A /* Build configuration list for PBXNativeTarget "navigationApp2" */;
+			buildPhases = (
+				76BC4DED19CECB5A009E627A /* Sources */,
+				76BC4DEE19CECB5A009E627A /* Frameworks */,
+				76BC4DEF19CECB5A009E627A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = navigationApp2;
+			productName = navigationApp2;
+			productReference = 76BC4DF119CECB5A009E627A /* navigationApp2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76BC4E1119CECB5A009E627A /* navigationApp2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76BC4E2619CECB5A009E627A /* Build configuration list for PBXNativeTarget "navigationApp2Tests" */;
+			buildPhases = (
+				76BC4E0E19CECB5A009E627A /* Sources */,
+				76BC4E0F19CECB5A009E627A /* Frameworks */,
+				76BC4E1019CECB5A009E627A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76BC4E1819CECB5A009E627A /* PBXTargetDependency */,
+			);
+			name = navigationApp2Tests;
+			productName = navigationApp2Tests;
+			productReference = 76BC4E1219CECB5A009E627A /* navigationApp2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76BC4DE919CECB5A009E627A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = juston1;
+				TargetAttributes = {
+					76BC4E1119CECB5A009E627A = {
+						TestTargetID = 76BC4DF019CECB5A009E627A;
+					};
+				};
+			};
+			buildConfigurationList = 76BC4DEC19CECB5A009E627A /* Build configuration list for PBXProject "navigationApp2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76BC4DE819CECB5A009E627A;
+			productRefGroup = 76BC4DF219CECB5A009E627A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76BC4DF019CECB5A009E627A /* navigationApp2 */,
+				76BC4E1119CECB5A009E627A /* navigationApp2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76BC4DEF19CECB5A009E627A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91E292721A47CCF900048293 /* 動線.png in Resources */,
+				76BC4E0D19CECB5A009E627A /* Images.xcassets in Resources */,
+				91E2926F1A47CCF900048293 /* 導覽地圖底圖_無動線.png in Resources */,
+				91E292821A47CCF900048293 /* 按鈕.png in Resources */,
+				91E2926A1A47CCF900048293 /* icon_匕首.png in Resources */,
+				91E292731A47CCF900048293 /* 圖騰布icon.png in Resources */,
+				91E2927A1A47CCF900048293 /* 視窗無X.png in Resources */,
+				91E292791A47CCF900048293 /* 視窗.png in Resources */,
+				91E2927D1A47CCF900048293 /* Network-Bluetooth-2-icon.png in Resources */,
+				91E292701A47CCF900048293 /* boat icon.png in Resources */,
+				91E292711A47CCF900048293 /* user_icon.png in Resources */,
+				91E2926B1A47CCF900048293 /* icon_服飾.png in Resources */,
+				91E292811A47CCF900048293 /* 底圖.png in Resources */,
+				76BC4DFF19CECB5A009E627A /* InfoPlist.strings in Resources */,
+				91E292761A47CCF900048293 /* 開始導航.png in Resources */,
+				76BC4E0819CECB5A009E627A /* Main.storyboard in Resources */,
+				91E2927B1A47CCF900048293 /* bk.png in Resources */,
+				91E292751A47CCF900048293 /* 純位置點.png in Resources */,
+				91E2927C1A47CCF900048293 /* cancel.png in Resources */,
+				91E292781A47CCF900048293 /* x.png in Resources */,
+				91E2926D1A47CCF900048293 /* icon_蒙古包.png in Resources */,
+				91E292771A47CCF900048293 /* 陶罐 icon.png in Resources */,
+				91E2927E1A47CCF900048293 /* setting.png in Resources */,
+				91E2926C1A47CCF900048293 /* icon_生活器具.png in Resources */,
+				91E292801A47CCF900048293 /* 視窗底.png in Resources */,
+				91E2926E1A47CCF900048293 /* icon_面具.png in Resources */,
+				91E2927F1A47CCF900048293 /* 藍芽檢查視窗.png in Resources */,
+				91E292741A47CCF900048293 /* 導航中.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BC4E1019CECB5A009E627A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BC4E1E19CECB5A009E627A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76BC4DED19CECB5A009E627A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BC4E0B19CECB5A009E627A /* ViewController.m in Sources */,
+				76BC4E0519CECB5A009E627A /* AppDelegate.m in Sources */,
+				76BC4E0119CECB5A009E627A /* main.m in Sources */,
+				765638811A2B6803009DD2A7 /* infoViewController.m in Sources */,
+				76BC4E2F19CECBFA009E627A /* mapViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BC4E0E19CECB5A009E627A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BC4E2019CECB5A009E627A /* navigationApp2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76BC4E1819CECB5A009E627A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76BC4DF019CECB5A009E627A /* navigationApp2 */;
+			targetProxy = 76BC4E1719CECB5A009E627A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76BC4DFD19CECB5A009E627A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76BC4DFE19CECB5A009E627A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		76BC4E0619CECB5A009E627A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76BC4E0719CECB5A009E627A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76BC4E1C19CECB5A009E627A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76BC4E1D19CECB5A009E627A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76BC4E2119CECB5A009E627A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		76BC4E2219CECB5A009E627A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76BC4E2419CECB5A009E627A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "navigationApp2/navigationApp2-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/redapple/Desktop/iOS_developer/estimote_SDK/iOS-SDK-master/EstimoteSDK/Headers/",
+				);
+				INFOPLIST_FILE = "navigationApp2/navigationApp2-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/redapple/Desktop/EST_SDK/iOS-SDK-master/EstimoteSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		76BC4E2519CECB5A009E627A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "navigationApp2/navigationApp2-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/redapple/Desktop/iOS_developer/estimote_SDK/iOS-SDK-master/EstimoteSDK/Headers/",
+				);
+				INFOPLIST_FILE = "navigationApp2/navigationApp2-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/redapple/Desktop/EST_SDK/iOS-SDK-master/EstimoteSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		76BC4E2719CECB5A009E627A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/navigationApp2.app/navigationApp2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "navigationApp2/navigationApp2-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "navigationApp2Tests/navigationApp2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		76BC4E2819CECB5A009E627A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/navigationApp2.app/navigationApp2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "navigationApp2/navigationApp2-Prefix.pch";
+				INFOPLIST_FILE = "navigationApp2Tests/navigationApp2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76BC4DEC19CECB5A009E627A /* Build configuration list for PBXProject "navigationApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BC4E2119CECB5A009E627A /* Debug */,
+				76BC4E2219CECB5A009E627A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76BC4E2319CECB5A009E627A /* Build configuration list for PBXNativeTarget "navigationApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BC4E2419CECB5A009E627A /* Debug */,
+				76BC4E2519CECB5A009E627A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76BC4E2619CECB5A009E627A /* Build configuration list for PBXNativeTarget "navigationApp2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BC4E2719CECB5A009E627A /* Debug */,
+				76BC4E2819CECB5A009E627A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76BC4DE919CECB5A009E627A /* Project object */;
+}
